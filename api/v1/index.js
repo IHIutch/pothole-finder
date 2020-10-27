@@ -1,9 +1,9 @@
-import express from "express";
-import reports from "./routes/reports";
+import express from 'express'
+import reports from './routes/reports'
 
-const app = express();
-app.use(express.json());
+const app = express()
+app.use(express.json())
 
-app.use("/reports", reports);
+app.use('/reports', reports)
 
-module.exports = app;
+module.exports = app

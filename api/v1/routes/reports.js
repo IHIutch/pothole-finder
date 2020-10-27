@@ -1,18 +1,18 @@
-import express from "express";
-import { Report } from "../models/index";
+import express from 'express'
+import { Report } from '../models/index'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get("/", (req, res) => {
+router.get('/', (req, res) => {
   Report.findAll()
     .then((reports) => {
-      res.json(reports);
+      res.json(reports)
     })
-    .catch((err) => console.log(err));
-});
+    .catch((err) => console.log(err))
+})
 
-router.post("/", (req, res) => {
-  const { lat, lng, accelerometer, gyroscope } = req.body;
+router.post('/', (req, res) => {
+  const { lat, lng, accelerometer, gyroscope } = req.body
 
   Report.create({
     lat,
@@ -21,9 +21,9 @@ router.post("/", (req, res) => {
     gyroscope,
   })
     .then((data) => {
-      res.status(201).json(data.id);
+      res.status(201).json(data.id)
     })
-    .catch((err) => console.log(err));
-});
+    .catch((err) => console.log(err))
+})
 
-export default router;
+export default router
