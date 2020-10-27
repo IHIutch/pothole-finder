@@ -23,8 +23,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     "@nuxtjs/eslint-module",
-    // https://go.nuxtjs.dev/stylelint
-    "@nuxtjs/stylelint-module",
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -33,7 +31,6 @@ export default {
     "bootstrap-vue/nuxt",
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/sentry",
     "nuxt-leaflet",
   ],
 
