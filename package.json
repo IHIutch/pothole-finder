@@ -32,7 +32,7 @@
     "nuxt-leaflet": "0.0.22",
     "pg": "^8.4.2",
     "pg-hstore": "^2.3.3",
-    "sass": "^1.27.0",
+    "sass": "^1.32.8",
     "sass-loader": "^10.0.4",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
